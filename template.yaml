@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: Helper with waste recycling in householdin Stevenage.
+Resources:
+  alexaskillkitsdkhowtoskill:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs6.10
+      CodeUri: .
+      Description: Helper with waste recycling in householdin Stevenage.
+Resources:
+      Timeout: 7
+      Role: !<tag:yaml.org,2002:js/undefined> ''
